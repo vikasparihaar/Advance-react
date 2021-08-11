@@ -1,28 +1,27 @@
-import React ,{useState}from 'react'
+import React, { useState } from 'react'
 
-function UseStateBasic() {
-    const[day,setDay]=useState("Today is a rainy day:(");
-    const handleClick = ()=> {
-        if(day =="Today is a rainy day:("){
-        setDay("Today is a bright day!!!")
+function UseStateBasics() {
+    const [day, setDay] = useState("Today is bad day")
+    const handleClick = () => {
+        if(day==="Today is bad day"){
+        setDay("Today is good day");
         }
-        else {
-            setDay("Today is a rainy day:(")
+        else{
+            setDay("Today is bad day")
         }
-    };
+    }
     return (
         <div>
             <>
-            <h1>
-                {day}
-                <button type="button" className="btn" onclick={handleClick}>
-                    change my day
-                    </button>
-            </h1>
+                <h1>{day}</h1>
+                <button type="button" className="btn" onClick={handleClick}>
+                change title
+                </button>
+               
+                
             </>
-            
-        </div>
+        </div >
     )
 }
 
-export default UseStateBasic
+export default UseStateBasics
