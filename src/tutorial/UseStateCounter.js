@@ -6,7 +6,7 @@ function UseStateCounter() {
         setTimeout(()=> {
             setValue((prevSate) =>
             {
-                return prevState +2; //passing a function through set value of use state
+                return prevState +1; //passing a function through set value of use state
             })
         
             //setValue(value + 50); //passing hard value through the set value of use state
