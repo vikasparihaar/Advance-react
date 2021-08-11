@@ -18,7 +18,14 @@ function Forms() {
         if(firstName && email) {
             console.log('submit the value');
             const person = {firstName:firstName,email:email};
-            console.log(person);
+            //console.log(person);
+            setPeople((people) =>
+            {
+                return [...people,person];
+               
+            });
+            setFirstName('');
+            setEmail('');
         }
         else{
             console.log('empty value')
@@ -38,6 +45,16 @@ function Forms() {
                     </div>
                     <button type="submit" onClick={handleSubmit}>Submit</button>
                 </form>
+                {people.map((person,index) => {
+                    const{id,firstName,email} = person;
+                    return(
+                    <div className ="item">
+                        <h4>{firstName}</h4>
+                        <p>{email}</p>
+                        
+                    </div>
+                    );
+                })}
             </article>
            
             
