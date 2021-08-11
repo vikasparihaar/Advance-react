@@ -1,10 +1,15 @@
 import React , {useState} from 'react'
 
 function UseStateCounter() {
-    const[value,setValue] = useState(0);
+    const[value,setValue,prevState] = useState(0);
     const complexIncrease = () => {
         setTimeout(()=> {
-            setValue(value + 50);
+            setValue((prevSate) =>
+            {
+                return prevState +2; //passing a function through set value of use state
+            })
+        
+            //setValue(value + 50); //passing hard value through the set value of use state
             
         },5000);
     }
