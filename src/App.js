@@ -2,21 +2,22 @@ import React from 'react';
 import './index.css';
 //import UseStateObject from './tutorial/UseStateObject';
 //import UseStateCounter from './tutorial/UseStateCounter';
-import UseEffectBasics from './tutorial/UseEffectBasics';
+//import UseEffectBasics from './tutorial/UseEffectBasics';
 //import UseStateArray from './tutorial/UseStateArray';
 //import UseStateErrorEx from './tutorial/useStateErrorEx';
 //import UseStateBasics from './tutorial/UseStateBasic';
-
+import Forms from './tutorial/Forms';
 
 function App() {
   return ( <div className="container">
   <h2>Advance react JS</h2>
-  {/* <UseStateBasics/> */}
-    {/* <UseStateArray/> */}
+     {/* <UseStateBasics/> */}
+     {/* <UseStateArray/> */}
      {/*<UseStateObject />*/}
      {/*<UseStateCounter /> */}
-     <UseEffectBasics />
-  {/* <UseStateErrorEx/> */}
+     {/*<UseEffectBasics /> */}
+     {/* <UseStateErrorEx/> */}
+     <Forms />
   </div>
   );
 }

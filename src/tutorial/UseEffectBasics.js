@@ -4,8 +4,10 @@ import React ,{useState,useEffect} from 'react'
      const [value,setValue]=useState(0);
      useEffect(() => {
          console.log('call useEffect');
-         document.title = `new iphone(${value})`;
+         if(value>=1)
+         document.title = `new (${value})`;
      });
+    
      console.log('render component')
     return (
         <>
