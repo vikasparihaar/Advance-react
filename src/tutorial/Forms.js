@@ -8,12 +8,21 @@ import React , {useState} from 'react'
 
 
 function Forms() {
-    const[firstName,setFirstName] = useState(" ");
-    const[email,setEmail] = useState(" ");
+    const [firstName,setFirstName] = useState(" ");
+    const [email,setEmail] = useState(" ");
+    const [people, setPeople] = useState([]);
 
     const handleSubmit =(e) => {
         e.preventDefault(); //this is used to prevent default behaviour of the browser
-        console.log("hello India")
+        //console.log("hello India")
+        if(firstName && email) {
+            console.log('submit the value');
+            const person = {firstName:firstName,email:email};
+            console.log(person);
+        }
+        else{
+            console.log('empty value')
+        }
     }
     return (
         <div>
