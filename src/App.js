@@ -1,13 +1,17 @@
 import React from 'react';
 import './index.css';
- import UseStateErrorEx from './tutorial/useStateErrorEx';
+import UseStateObject from './tutorial/UseStateObject';
+import UseStateArray from './tutorial/UseStateArray';
+//import UseStateErrorEx from './tutorial/useStateErrorEx';
+//import UseStateBasics from './tutorial/UseStateBasic';
 
- import UseStateArray from './tutorial/UseStateArray';
+
 function App() {
   return ( <div className="container">
   <h2>Advance react JS</h2>
   {/* <UseStateBasics/> */}
-  <UseStateArray/>
+     <UseStateArray/>
+     <UseStateObject />
   {/* <UseStateErrorEx/> */}
   </div>
   );

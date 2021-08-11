@@ -20,7 +20,7 @@ function UseStateArray() {
                 })
             }
             <button className="btn" onClick={() => setPeople([])}>
-                Clear the cartoons
+                Clear the character
             </button>
         </>
     )
