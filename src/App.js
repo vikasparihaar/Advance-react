@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import Index from './tutorial/Reducer/index';
 //import UseStateObject from './tutorial/UseStateObject';
 //import UseStateCounter from './tutorial/UseStateCounter';
 //import UseEffectBasics from './tutorial/UseEffectBasics';
@@ -7,7 +8,7 @@ import './index.css';
 //import UseStateErrorEx from './tutorial/useStateErrorEx';
 //import UseStateBasics from './tutorial/UseStateBasic';
 //import Forms from './tutorial/Forms';
-import LearnJSON from './tutorial/LearnJSON';
+//import LearnJSON from './tutorial/LearnJSON';
 
 function App() {
   return ( <div className="container">
@@ -18,8 +19,9 @@ function App() {
      {/*<UseStateCounter /> */}
      {/*<UseEffectBasics /> */}
      {/* <UseStateErrorEx/> */}
-     <LearnJSON />
+     {/*<LearnJSON /> */}
      {/*<Forms /> */}
+     <Index />
   </div>
   );
 }
