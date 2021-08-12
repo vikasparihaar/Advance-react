@@ -6,18 +6,20 @@ import './index.css';
 //import UseStateArray from './tutorial/UseStateArray';
 //import UseStateErrorEx from './tutorial/useStateErrorEx';
 //import UseStateBasics from './tutorial/UseStateBasic';
-import Forms from './tutorial/Forms';
+//import Forms from './tutorial/Forms';
+import LearnJSON from './tutorial/LearnJSON';
 
 function App() {
   return ( <div className="container">
-  <h2>Advance react JS</h2>
+  {/*<h2>Advance react JS</h2> */}
      {/* <UseStateBasics/> */}
      {/* <UseStateArray/> */}
      {/*<UseStateObject />*/}
      {/*<UseStateCounter /> */}
      {/*<UseEffectBasics /> */}
      {/* <UseStateErrorEx/> */}
-     <Forms />
+     <LearnJSON />
+     {/*<Forms /> */}
   </div>
   );
 }
